@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 17 11:33:43 2023
-
-@author: pallabidutta
-"""
 
 from __future__ import annotations
 from torchsummary import summary
