@@ -16,6 +16,12 @@ Installation of necessary Python packages using:
 pip install requirements.txt
 
 ```
+Structure of model directory:
+```
+model
+   |----wavecoformer.py
+
+```
 
 ## 📜Citation
 If you like our work, please consider giving it a star ⭐ and cite us
