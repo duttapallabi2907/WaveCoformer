@@ -2,7 +2,7 @@
 :pushpin: This is an official PyTorch implementation of **Wavelet-Infused Convolution-Transformer for Efficient Segmentation in Medical Images**
 
 > [**Wavelet-infused convolution-transformer for efficient segmentation in medical images**](https://ieeexplore.ieee.org/abstract/document/10897783)<br>
-> Pallabi Dutta, [Sushmita Mitra](https://www.isical.ac.in/~sushmita/)\* and Swalpa Kumar Roy](https://swalpa.github.io/)<sup>✉</sup>,
+> Pallabi Dutta, [Sushmita Mitra](https://www.isical.ac.in/~sushmita/)\* and Swalpa Kumar Roy(https://swalpa.github.io/)<sup>✉</sup>\*
 
 ![Architecture](Wavecoformer.png)
 
