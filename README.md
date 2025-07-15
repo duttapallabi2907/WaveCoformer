@@ -5,6 +5,18 @@
 
 **Abstract**: Recent medical image segmentation methods extract the characteristics of anatomical structures only from the spatial domain, ignoring the distinctive patterns present in the spectral representation. This study aims to develop a novel segmentation architecture that leverages both spatial and spectral characteristics for better segmentation outcomes. This research introduces the wavelet-infused convolutional Transformer (WaveCoformer), a computationally effective framework to fuse information from both spatial and spectral domains of medical images. Fine-grained textural features are captured from the wavelet components by the convolution module. A transformer block identifies the relevant activation maps within the volumes, followed by self-attention to effectively learn long-range dependencies to capture the global context of the target regions. A cross-attention mechanism effectively combines the distinctive features acquired by both modules to produce a comprehensive and robust representation of the input data. WaveCoformer outperforms related state-of-the-art networks in publicly available Synapse and Adrenal tumor segmentation datasets, with a mean Dice score of 83.86% and 79%, respectively. The model is feasible for deployment in resource-constrained environments with rapid medical image analysis due to its computationally efficient nature and improved segmentation performance.
 
+## 📚 Datasets
+
+The Synapse dataset can be accessed from [https://doi.org/10.7303/syn3193805](https://doi.org/10.7303/syn3193805)
+The Adrenal-ACC-Ki67-Seg dataset can be accessed from [https://www.cancerimagingarchive.net/collection/adrenal-acc-ki67-seg/](https://www.cancerimagingarchive.net/collection/adrenal-acc-ki67-seg/)
+
+## 🛠 Setup
+Installation of necessary Python packages using:
+```
+pip install requirements.txt
+
+```
+
 ## 📜Citation
 If you like our work, please consider giving it a star ⭐ and cite us
 ```
