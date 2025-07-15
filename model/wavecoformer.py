@@ -408,7 +408,7 @@ class SwinBlock(nn.Module):
         x4_out_n = self.proj_out(x4, normalize)
         return [x0_out_n, x1_out_n, x2_out_n, x3_out_n, x4_out_n]
     
-class DwtformerUpBlock(nn.Module):
+class wavecoformerUpBlock(nn.Module):
     def __init__(self,
                  in_channels: int,
                  in_channels_2: int,
@@ -532,23 +532,23 @@ class Wavecoformer(nn.Module):
             res_block=True,
         )
         
-        self.decoder5 = DwtformerUpBlock(in_channels=16 * feature_size, 
+        self.decoder5 = wavecoformerUpBlock(in_channels=16 * feature_size, 
                                          in_channels_2=8 * feature_size, 
                                          out_channels=8 * feature_size, 
                                          upsample_kernel_size=2)
-        self.decoder4 = DwtformerUpBlock(in_channels=8 * feature_size, 
+        self.decoder4 = wavecoformerUpBlock(in_channels=8 * feature_size, 
                                          in_channels_2=4 * feature_size, 
                                          out_channels=4 * feature_size, 
                                          upsample_kernel_size=2)
-        self.decoder3 = DwtformerUpBlock(in_channels=4 * feature_size, 
+        self.decoder3 = wavecoformerUpBlock(in_channels=4 * feature_size, 
                                          in_channels_2=2 * feature_size, 
                                          out_channels=2 * feature_size, 
                                          upsample_kernel_size=2)
-        self.decoder2 = DwtformerUpBlock(in_channels=2 * feature_size, 
+        self.decoder2 = wavecoformerUpBlock(in_channels=2 * feature_size, 
                                          in_channels_2=feature_size, 
                                          out_channels=feature_size, 
                                          upsample_kernel_size=2)
-        self.decoder1 = DwtformerUpBlock(in_channels=feature_size, 
+        self.decoder1 = wavecoformerUpBlock(in_channels=feature_size, 
                                          in_channels_2=feature_size, 
                                          out_channels=feature_size, 
                                          upsample_kernel_size=2)
